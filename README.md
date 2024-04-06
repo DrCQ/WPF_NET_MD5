@@ -1,17 +1,17 @@
 # WPF_NET_MD5
-The WPF_NET_MD5 repositiory contains an WPF **Template Application** for NET 8.0, based on MDIX ([MaterialDesingInXAML](http://materialdesigninxaml.net/)) Themens (V 5.0) and Colors(V 3.0). This Application is using the Community Toolkit 8.2 and the MS Dependency Injection to realize MVVM patterns. The application code is written in VB.NET.
+The WPF_NET_MD5 repositiory contains an WPF **Template Application** for NET 8.0, based on MDIX ([MaterialDesingInXAML](http://materialdesigninxaml.net/)) Themens (V 5.0) and Colors (V 3.0). This Application is using the Community Toolkit 8.2 and the MS Dependency Injection to realize MVVM patterns. The application code is written in VB.NET.
 
-## *Dark* mode example
+### *Dark* mode example
 <img width="475" alt="main-view-dark" src="https://github.com/DrCQ/WPF_NET_MD5/assets/49019093/82d1dd26-2363-4755-ac76-679f5d408d6e">
 
-## *Light* mode example
+### *Light* mode example
 
 <img width="472" alt="main-view-light" src="https://github.com/DrCQ/WPF_NET_MD5/assets/49019093/7da39fd5-ea6d-46d3-9545-a6381a51256d">
 
 ## Layout
 The `MainWindow` contains following elements:
 1. Application's toolbar with the main `Menu` and `Window` buttons
-2. Application's Title with `Popup` control to swistch between the *Dark* and *Light* mode
+2. Application's Title with `Popup` control to switch between the *Dark* and *Light* mode
 3. Working area - reserved for the final application
 4. Application's `StatusBar` with Notfication's overview
 
