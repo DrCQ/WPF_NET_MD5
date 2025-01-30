@@ -7,13 +7,13 @@
         xmlns:System="clr-namespace:System;assembly=System.Runtime"
         xmlns:local="clr-namespace:WPF_NET_MD5"
         xmlns:vi="clr-namespace:WPF_NET_MD5.View"
-        Title="Material Design 5.0 - NET8.0" 
+        Title="Material Design 5.2 - NET9.0" 
         DataContext="{Binding MainWindowVM, Source={StaticResource Locator}}"
         d:DataContext="{Binding MainWindowVM, Source={StaticResource Locator}}"
         mc:Ignorable="d" d:Height="250" d:Width="800">
-    
+
     <Window.Resources>
-        
+
         <!--#region Window Control Buttons: Minimize, Mximize, Close -->
 
         <!-- WndMinButtonStyle -->
@@ -50,16 +50,16 @@
                 </Trigger>
             </Style.Triggers>
         </Style>
-        
+
         <!--#endregion -->
 
         <!--#region  Window Chrome Constants: Heigh, Radius, BorderThickness, ResizeBorderThickness -->
-        
+
         <System:Double x:Key="ChromeCaptionHeightValue">42</System:Double>
         <CornerRadius x:Key="ChromeCornerRadiusValue">4</CornerRadius>
         <Thickness x:Key="ChromeBorderThicknessValue">3,42,3,3</Thickness>
         <Thickness x:Key="ChromeResizeBorderThicknessValue">5,5,5,5</Thickness>
-        
+
         <!--#endregion -->
 
         <!-- MainWindowMenu -->
@@ -76,9 +76,9 @@
             </MenuItem>
 
         </x:Array>
-        
+
     </Window.Resources>
-    
+
     <Window.Style>
         <Style TargetType="{x:Type Window}">
             <Style.Resources>
@@ -132,15 +132,19 @@
         </Style>
     </Window.Style>
 
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition/>
-                <RowDefinition Height="Auto" MinHeight="32"/>
-            </Grid.RowDefinitions>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="6*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="Auto" MinHeight="32"/>
+        </Grid.RowDefinitions>
 
-            <matD:ColorZone Grid.Row="0" Mode="Inverted" Padding="4,6" VerticalAlignment="Bottom">
-                <DockPanel LastChildFill="True">
+        <matD:ColorZone Grid.Row="0" Mode="Inverted" Padding="4,6" VerticalAlignment="Center" Grid.ColumnSpan="2">
+            <DockPanel LastChildFill="True">
                 <matD:PopupBox DockPanel.Dock="Right" StaysOpen="False" IsEnabled="{Binding DataService.IsNotModal, Mode=OneWay}" Padding="3">
                     <Grid >
                         <Grid.RowDefinitions>
@@ -158,20 +162,21 @@
                     </Grid>
                 </matD:PopupBox>
                 <StackPanel Orientation="Horizontal" >
-                        <!-- CAUTION: the application-32.png image must have BuildAction set to Resource!!! -->
-                        <Image Source="/Graphic/application-32.png" Margin="12,0" Stretch="None" ToolTip="Image View"/>
-                        <TextBlock Text="{Binding Title, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MainWindow}}}"
+                    <!-- CAUTION: the application-32.png image must have BuildAction set to Resource!!! -->
+                    <Image Source="/Graphic/application-32.png" Margin="12,0" Stretch="None" ToolTip="Image View"/>
+                    <TextBlock Text="{Binding Title, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MainWindow}}}"
                                Style="{StaticResource MaterialDesignHeadline6TextBlock}" VerticalAlignment="Center" d:Text="APPLICATION TITLE" />
-                    </StackPanel>
-                </DockPanel>
-            </matD:ColorZone>
-        <vi:StatusBarView Grid.Row="2" IsTabStop="False" Focusable="False"/>
+                </StackPanel>
+            </DockPanel>
+        </matD:ColorZone>
+        
+        <vi:StatusBarView Grid.Row="2" IsTabStop="False" Focusable="False" Grid.ColumnSpan="2" Margin="0,0,0,0" Grid.RowSpan="2"/>
 
-        <matD:DialogHost Grid.Row="1">
+        <matD:DialogHost Grid.Row="1" Grid.ColumnSpan="2">
             <Grid>
-                
+
             </Grid>
         </matD:DialogHost>
-    </Grid>        
+    </Grid>
 
 </Window>

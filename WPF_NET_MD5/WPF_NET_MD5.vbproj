@@ -2,19 +2,20 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows10.0.17763.0</TargetFramework>
+    <TargetFramework>net9.0-windows10.0.26100.0</TargetFramework>
     <RootNamespace>WPF_NET_MD5</RootNamespace>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>Graphic\application-32.ico</ApplicationIcon>
-    <Title>Material Design 5.0  NET 8.0 Template App</Title>
+    <Title>Material Design 5.2  NET 9.0 Template App</Title>
     <Company>Dr. CQ Soft</Company>
-    <Copyright>Copyright © 2024</Copyright>
-    <Description>Application Template for NET 8.0 using the MaterialDesign Themes (5.0) and Colors (3.0). This is an MVVM application based on the Community Toolkit 8.2</Description>
-    <Product>Material Design 5.0 - NET 8.0 Template App</Product>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <Copyright>Copyright © 2025</Copyright>
+    <Description>Application Template for NET 9.0 using the MaterialDesign Themes (5.2) and Colors (5.2). This is an MVVM application based on the Community Toolkit 8.4</Description>
+    <Product>Material Design 5.2 - NET 9.0 Template App</Product>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
     <PackageId></PackageId>
-    <AssemblyName>Material Design 5.0 - NET 8.0 Template App</AssemblyName>
+    <AssemblyName>Material Design 5.2 - NET 9.0 Template App</AssemblyName>
+    <SupportedOSPlatformVersion>10.0.17763.0</SupportedOSPlatformVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -40,10 +41,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
-    <PackageReference Include="MaterialDesignColors" Version="3.0.0" />
-    <PackageReference Include="MaterialDesignThemes" Version="5.0.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+    <PackageReference Include="MaterialDesignColors" Version="5.2.1" />
+    <PackageReference Include="MaterialDesignThemes" Version="5.2.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.1" />
   </ItemGroup>
 
   <ItemGroup>

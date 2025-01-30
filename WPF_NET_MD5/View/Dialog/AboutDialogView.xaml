@@ -101,9 +101,9 @@
                                 </ListView.View>
                                 <d:ListView.ItemsSource>
                                     <x:Array Type="{x:Type dvm:DesignPackInfo}">
-                                        <dvm:DesignPackInfo Name="NET" Version="8.0.0.0"/>
-                                        <dvm:DesignPackInfo Name="MaterialDesignThemes.Wpf" Version="5.0.0.0"/>
-                                        <dvm:DesignPackInfo Name="MaterialDesignColors" Version="3.0.0.0"/>
+                                        <dvm:DesignPackInfo Name="NET" Version="9.0.0.0"/>
+                                        <dvm:DesignPackInfo Name="MaterialDesignThemes.Wpf" Version="5.2.0.0"/>
+                                        <dvm:DesignPackInfo Name="MaterialDesignColors" Version="5.2.0.0"/>
                                     </x:Array>
                                 </d:ListView.ItemsSource>
                             </ListView>
